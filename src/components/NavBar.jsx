@@ -4,20 +4,12 @@ import '../App.css';
 const Navbar = () => {
   return (
 
-<nav className="flex justify-between items-center p-4 sticky top-0 backdrop-blur-lg bg-white/0">
+<nav className="flex justify-between items-center p-4 sticky top-0 backdrop-blur-lg bg-white/0 z-50">
   <div className="text-[min(4vw,32px)] font-jersey text-soft space-x-7">
-    <a href="/">
-      Home
-    </a>
-    <a href="/">
-      About
-    </a>
-    <a href="/">
-      Experience
-    </a>
-    <a href="/">
-      Projects
-    </a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
   </div>
   
   <div className="flex items-center space-x-4">

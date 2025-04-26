@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Wrapper from "./Wrapper";
-
-// You can replace this with an actual pointer logo SVG or icon
-const pointerLogo = "/alien.svg"; // Path to your logo (SVG or PNG)
+const pointerLogo = "/alien.svg";
 
 function Experience() {
   const [selectedTab, setSelectedTab] = useState(0);
@@ -33,13 +31,11 @@ function Experience() {
 
   return (
     <Wrapper>
-      {/* Left Tabs (Horizontal) */}
       <div className="w-full p-5 bg-lavender rounded-xl shadow-soft mt-5">
         <h1 className="font-chakra text-soft sm:text-4xl text-2xl my-5">&lt;Experience&gt;</h1>
         <div className="flex space-x-10 relative">
           {experiences.map((experience, index) => (
             <div key={index} className="relative flex-col items-center">
-              {/* Pointer Logo on Top of the Selected Company */}
               {selectedTab === index && (
                 <div
                   className="absolute top-0 left-1/2 transform -translate-x-1/2 z-10 transition-all duration-300 ease-in-out"
@@ -49,9 +45,9 @@ function Experience() {
                   }}
                 >
                   <img
-                    src={pointerLogo}
+                    src="/alien.svg"
                     alt="Pointer Logo"
-                    className="w-6 h-6" // Adjust the size of the pointer logo
+                    className="w-6 h-6"
                   />
                 </div>
               )}
