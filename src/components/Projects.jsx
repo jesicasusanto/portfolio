@@ -58,12 +58,12 @@ function Projects() {
             <div className="flex space-x-4 mt-auto">
               {project.github && (
                 <a href={project.github} target="_blank" rel="noopener noreferrer">
-                  <img src="/github.svg" alt="GitHub" className="w-6 h-6 hover:opacity-80" />
+                  <img src="/portfolio/github.svg" alt="GitHub" className="w-6 h-6 hover:opacity-80" />
                 </a>
               )}
               {project.demo && (
                 <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                  <img src="/demo.svg" alt="Demo" className="w-6 h-6 hover:opacity-80" />
+                  <img src="/portfolio/demo.svg" alt="Demo" className="w-6 h-6 hover:opacity-80" />
                 </a>
               )}
             </div>

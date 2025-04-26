@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Wrapper from "./Wrapper";
-const pointerLogo = "/alien.svg";
 
 function Experience() {
   const [selectedTab, setSelectedTab] = useState(0);
@@ -45,7 +44,7 @@ function Experience() {
                   }}
                 >
                   <img
-                    src="/alien.svg"
+                    src="/portfolio/alien.svg"
                     alt="Pointer Logo"
                     className="w-6 h-6"
                   />

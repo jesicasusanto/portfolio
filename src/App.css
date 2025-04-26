@@ -13,6 +13,7 @@
   --color-eggplant:#393348;
   --animate-typing: typing 3.5s steps(40, end), blinkcaret .75s step-end infinite;
   --animate-blinkcaret: blinkcaret .75s step-end infinite;
+  --animate-fadeemail: fadeOut 2s ease-in-out forwards;
   --shadow-soft: 20px 20px 60px #79708a,
   -20px -20px 60px #a398ba;
   
@@ -25,6 +26,12 @@
     from, to { border-color: transparent }
     50% { border-color: #E5D3E8; }
   }
+  @keyframes fadeOut {
+    0%   { opacity: 0; transform: translateY(-10px); }
+    30%  { opacity: 1; transform: translateY(0); }
+    80%  { opacity: 1; }
+    100% { opacity: 0; transform: translateY(-10px); }
+  }  
 }
 
 @layer components{

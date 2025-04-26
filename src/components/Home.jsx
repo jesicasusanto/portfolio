@@ -3,7 +3,7 @@ function Home() {
   return (
     <div className='flex flex-col justify-center items-center'>
       <img
-        src="/tamagotchi.gif"
+        src="/portfolio/tamagotchi.gif"
         alt="About animation"
         className="w-[153px] h-[183px] sm:h-[367px] sm:w-[306px]"
       />
